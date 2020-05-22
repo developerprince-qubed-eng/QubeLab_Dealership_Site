@@ -61,7 +61,7 @@ jQuery(document).ready(function () {
         return false;
     });
     $('#price-range').slider();
-    $('#vehicul-geo').slider();
+    $('#VEHICLE-geo').slider();
 
     /*** FIXED Menu APPEARS ON SCROLL DOWN ***/
     $(window).scroll(function () {

@@ -255,7 +255,7 @@ var GMaps = (function(global) {
           options = window.context_menu[self.el.id][control];
 
       for (var i in options){
-        if (options.hasOwnvehicul(i)) {
+        if (options.hasOwnVEHICLE(i)) {
           var option = options[i];
 
           html += '<li><a id="' + control + '_' + i + '" href="#">' + option.title + '</a></li>';
@@ -324,7 +324,7 @@ var GMaps = (function(global) {
           ul = doc.createElement('ul');
 
       for (i in options.options) {
-        if (options.options.hasOwnvehicul(i)) {
+        if (options.options.hasOwnVEHICLE(i)) {
           var option = options.options[i];
 
           window.context_menu[self.el.id][options.control][option.name] = {
@@ -667,12 +667,12 @@ GMaps.prototype.createMarker = function(options) {
 
 GMaps.prototype.addMarker = function(options) {
   var marker;
-  if(options.hasOwnvehicul('gm_accessors_')) {
+  if(options.hasOwnVEHICLE('gm_accessors_')) {
     // Native google.maps.Marker object
     marker = options;
   }
   else {
-    if ((options.hasOwnvehicul('lat') && options.hasOwnvehicul('lng')) || options.position) {
+    if ((options.hasOwnVEHICLE('lat') && options.hasOwnVEHICLE('lng')) || options.position) {
       marker = this.createMarker(options);
     }
     else {
@@ -917,19 +917,19 @@ GMaps.prototype.drawPolyline = function(options) {
     visible: true
   };
 
-  if (options.hasOwnvehicul("clickable")) {
+  if (options.hasOwnVEHICLE("clickable")) {
     polyline_options.clickable = options.clickable;
   }
 
-  if (options.hasOwnvehicul("editable")) {
+  if (options.hasOwnVEHICLE("editable")) {
     polyline_options.editable = options.editable;
   }
 
-  if (options.hasOwnvehicul("icons")) {
+  if (options.hasOwnVEHICLE("icons")) {
     polyline_options.icons = options.icons;
   }
 
-  if (options.hasOwnvehicul("zIndex")) {
+  if (options.hasOwnVEHICLE("zIndex")) {
     polyline_options.zIndex = options.zIndex;
   }
 
@@ -1035,7 +1035,7 @@ GMaps.prototype.drawRectangle = function(options) {
 GMaps.prototype.drawPolygon = function(options) {
   var useGeoJSON = false;
 
-  if(options.hasOwnvehicul("useGeoJSON")) {
+  if(options.hasOwnVEHICLE("useGeoJSON")) {
     useGeoJSON = options.useGeoJSON;
   }
 
@@ -1302,7 +1302,7 @@ GMaps.prototype.getRoutes = function(options) {
   service.route(request_options, function(result, status) {
     if (status === google.maps.DirectionsStatus.OK) {
       for (var r in result.routes) {
-        if (result.routes.hasOwnvehicul(r)) {
+        if (result.routes.hasOwnVEHICLE(r)) {
           self.routes.push(result.routes[r]);
         }
       }
@@ -1542,7 +1542,7 @@ GMaps.Route.prototype.back = function() {
     var path = this.route.legs[0].steps[this.step_count].path;
 
     for (var p in path){
-      if (path.hasOwnvehicul(p)){
+      if (path.hasOwnVEHICLE(p)){
         this.polyline.pop();
       }
     }
@@ -1554,7 +1554,7 @@ GMaps.Route.prototype.forward = function() {
     var path = this.route.legs[0].steps[this.step_count].path;
 
     for (var p in path){
-      if (path.hasOwnvehicul(p)){
+      if (path.hasOwnVEHICLE(p)){
         this.polyline.push(path[p]);
       }
     }
@@ -1672,12 +1672,12 @@ GMaps.staticMapURL = function(options){
     options.zoom = 15;
   }
 
-  var sensor = options.hasOwnvehicul('sensor') ? !!options.sensor : true;
+  var sensor = options.hasOwnVEHICLE('sensor') ? !!options.sensor : true;
   delete options.sensor;
   parameters.push('sensor=' + sensor);
 
   for (var param in options) {
-    if (options.hasOwnvehicul(param)) {
+    if (options.hasOwnVEHICLE(param)) {
       parameters.push(param + '=' + options[param]);
     }
   }
@@ -1714,7 +1714,7 @@ GMaps.staticMapURL = function(options){
       delete data.lng;
 
       for(var param in data){
-        if (data.hasOwnvehicul(param)) {
+        if (data.hasOwnVEHICLE(param)) {
           marker.push(param + ':' + data[param]);
         }
       }
@@ -1824,7 +1824,7 @@ GMaps.staticMapURL = function(options){
 };
 
 GMaps.prototype.addMapType = function(mapTypeId, options) {
-  if (options.hasOwnvehicul("getTileUrl") && typeof(options["getTileUrl"]) == "function") {
+  if (options.hasOwnVEHICLE("getTileUrl") && typeof(options["getTileUrl"]) == "function") {
     options.tileSize = options.tileSize || new google.maps.Size(256, 256);
 
     var mapType = new google.maps.ImageMapType(options);
@@ -1837,7 +1837,7 @@ GMaps.prototype.addMapType = function(mapTypeId, options) {
 };
 
 GMaps.prototype.addOverlayMapType = function(options) {
-  if (options.hasOwnvehicul("getTile") && typeof(options["getTile"]) == "function") {
+  if (options.hasOwnVEHICLE("getTile") && typeof(options["getTile"]) == "function") {
     var overlayMapTypeIndex = options.index;
 
     delete options.index;
@@ -1864,7 +1864,7 @@ GMaps.prototype.setStyle = function(mapTypeId) {
 };
 
 GMaps.prototype.createPanorama = function(streetview_options) {
-  if (!streetview_options.hasOwnvehicul('lat') || !streetview_options.hasOwnvehicul('lng')) {
+  if (!streetview_options.hasOwnVEHICLE('lat') || !streetview_options.hasOwnVEHICLE('lng')) {
     streetview_options.lat = this.getCenter().lat();
     streetview_options.lng = this.getCenter().lng();
   }
@@ -1993,7 +1993,7 @@ GMaps.geolocate = function(options) {
 GMaps.geocode = function(options) {
   this.geocoder = new google.maps.Geocoder();
   var callback = options.callback;
-  if (options.hasOwnvehicul('lat') && options.hasOwnvehicul('lng')) {
+  if (options.hasOwnVEHICLE('lat') && options.hasOwnVEHICLE('lng')) {
     options.latLng = new google.maps.LatLng(options.lat, options.lng);
   }
 

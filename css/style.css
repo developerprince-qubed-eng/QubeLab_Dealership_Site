@@ -266,15 +266,15 @@ iframe{
     right: 2px;
     top: -6px;
 }
-.map-vehicul-thumb {
+.map-VEHICLE-thumb {
     width: 155px;
     float: left; 
 }
-.map-vehicul-thumb img {
+.map-VEHICLE-thumb img {
     width: 100%;
     height: 140px;
 }
-.map-vehicul-body{
+.map-VEHICLE-body{
     width: 295px;
     float: left;
     height: 100%;
@@ -282,7 +282,7 @@ iframe{
     min-height: 140px;
     padding: 5px;
 }
-.map-vehicul-body h2 {
+.map-VEHICLE-body h2 {
     color: #1b1d21;
     float: left;
     font-family: Montserrat;
@@ -291,10 +291,10 @@ iframe{
     margin: 22px 0 7px;
     width: 100%;
 }
-.map-vehicul-body h2 a{
+.map-VEHICLE-body h2 a{
     color: #1b1d21;
 }
-.map-vehicul-details{
+.map-VEHICLE-details{
     position: absolute;
     bottom: 0px;
     background-color: rgb(237, 237, 237);
@@ -303,12 +303,12 @@ iframe{
     padding: 7px;
     margin: -5px;
 }
-.map-vehicul-price {
+.map-VEHICLE-price {
     color: #ff2929;
     font-family: Montserrat;
     font-size: 22px;
 }
-#vehicul_google_map_search_input {
+#VEHICLE_google_map_search_input {
     margin-top: 16px;
     border: 1px solid transparent;
     border-radius: 2px 0 0 2px;
@@ -763,36 +763,36 @@ iframe{
     font-style: normal;
 }
 
-/*=============== vehicul Post ===================*/
-.vehicul-sec {
+/*=============== VEHICLE Post ===================*/
+.VEHICLE-sec {
     float: left;
     margin-top: -50px;
     width: 100%;
 }
-.vehicul-post {
+.VEHICLE-post {
     float: left;
     margin-top: 50px;
     width: 100%;
 }
-.agnet-prop .vehicul-post  { 
+.agnet-prop .VEHICLE-post  { 
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.vehicul-thumb {
+.VEHICLE-thumb {
     float: left;
     position: relative;
     width: 100%;
 }
-.vehicul-thumb > img {
+.VEHICLE-thumb > img {
     float: left;
     width: 100%;
     height: 430px;
 }
-.vehicul-thumb:hover > .vehicul-post-detail {
+.VEHICLE-thumb:hover > .VEHICLE-post-detail {
     padding-bottom: 60px;
     padding-top: 60px;
 }
-.vehicul-post-detail {
+.VEHICLE-post-detail {
     background: rgba(69, 69, 69, 0.7) none repeat scroll 0 0;
     bottom: -90px;
     padding: 45px 35px;
@@ -800,7 +800,7 @@ iframe{
     right: 20px;
     width: 266px;
 }
-.vehicul-post-detail a.vehicul-more {
+.VEHICLE-post-detail a.VEHICLE-more {
     color: #ffffff;
     float: left;
     font-family: open sans;
@@ -810,10 +810,10 @@ iframe{
     margin-bottom: 20px;
     padding: 7px 27px;
 }
-.vehicul-post-detail a.vehicul_more:hover{
+.VEHICLE-post-detail a.VEHICLE_more:hover{
     background: #ffffff;
 }
-.vehicul-post-detail > h2 {
+.VEHICLE-post-detail > h2 {
     color: #fff;
     float: left;
     font-family: Montserrat;
@@ -824,10 +824,10 @@ iframe{
     margin: 0 0 9px;
     width: 100%;
 }
-.vehicul-post-detail > h2 a{
+.VEHICLE-post-detail > h2 a{
     color: inherit;
 }
-.vehicul-post-detail > span {
+.VEHICLE-post-detail > span {
     color: #c7c7c7;
     float: left;
     font-family: open sans;
@@ -837,32 +837,32 @@ iframe{
     width: 100%;
     margin-top: 5px;
 }
-.vehicul-post-detail > span i {
+.VEHICLE-post-detail > span i {
     font-size: 14px;
     margin-right: 7px;
 }
-.vehicul-post-detail p {
+.VEHICLE-post-detail p {
     color: #dedede;
     float: left;
     margin-top: 13px;
     width: 100%;
 }
-.vehicul-agent {
+.VEHICLE-agent {
     float: right;
     padding-right: 306px;
     padding-top: 20px;
     width: 100%;
 }
-.vehicul-agent > a {
+.VEHICLE-agent > a {
     float: left;
     width: 100%;
 }
-.vehicul-agent img {
+.VEHICLE-agent img {
     float: right;
     margin-left: 12px;
     width: 57px;
 }
-.vehicul-agent h3 {
+.VEHICLE-agent h3 {
     color: #2e2e2e;
     display: list-item;
     float: none;
@@ -878,7 +878,7 @@ iframe{
     text-transform: uppercase;
     width: 100%;
 }
-.vehicul-agent span {
+.VEHICLE-agent span {
     color: #949494;
     display: list-item;
     font-family: open sans;
@@ -888,10 +888,10 @@ iframe{
     text-align: right;
     text-transform: uppercase;
 }
-.vehicul-agent span i {
+.VEHICLE-agent span i {
     font-style: normal;
 }
-.vehicul-post-detail .vehicul-info {
+.VEHICLE-post-detail .VEHICLE-info {
     margin: 0px;
     left: 0px;
     list-style: outside none;
@@ -900,7 +900,7 @@ iframe{
     margin-bottom: 22px;
 }
 
-.vehicul-post-detail .vehicul-info li{
+.VEHICLE-post-detail .VEHICLE-info li{
 
     color: #F6F6F6;
     font-size: 14px;
@@ -1635,7 +1635,7 @@ blockquote p {
 .related-VEHICLES-items .item {
     padding: 10px;
 }
-.vehicul-feature-content {
+.VEHICLE-feature-content {
     padding: 10px;
 }
 .comment-form {
@@ -2886,7 +2886,7 @@ body.fixed-bg-boxed {
     margin-top: 30px;
     width: 100%;
 }
-.agnet-prop .VEHICLES-box ,.agnet-prop .vehicul-post{
+.agnet-prop .VEHICLES-box ,.agnet-prop .VEHICLE-post{
     margin-top: 0px;
 }
 .agnet-prop .VEHICLES-box{
@@ -2935,13 +2935,13 @@ body.fixed-bg-boxed {
 .carousel-prop .VEHICLES-box{
     padding: 0 8px;
 }
-.my-vehicul .VEHICLES-box {
+.my-VEHICLE .VEHICLES-box {
     margin-bottom: 25px;
 }
 .VEHICLES-thumb .spn-save:hover{
     background-color: rgba(255, 13, 13, 0.79);
 }
-.VEHICLES-thumb ul.vehicul-info{
+.VEHICLES-thumb ul.VEHICLE-info{
     bottom: 40px;
     margin: 0px;
     position: absolute;
@@ -2955,18 +2955,18 @@ body.fixed-bg-boxed {
 
 }
 
-.VEHICLES-thumb ul.vehicul-info li{
+.VEHICLES-thumb ul.VEHICLE-info li{
     float: left;
     margin-right: 5px;
 } 
-.VEHICLES-thumb ul.vehicul-info .li-rl {
+.VEHICLES-thumb ul.VEHICLE-info .li-rl {
     border-right:1px solid #eee;
 }
-.VEHICLES-thumb ul.vehicul-info li i { 
+.VEHICLES-thumb ul.VEHICLE-info li i { 
     font-size: 20px;
     color: #FFF;
 }
-.VEHICLES-thumb ul.vehicul-info li span { 
+.VEHICLES-thumb ul.VEHICLE-info li span { 
     font-size: 16px;
     color: #EFEFEF;
 }
@@ -3075,7 +3075,7 @@ bottom: 15px;
     -o-transform: scale(1);
     transform: scale(1);
 }
-.vehicul-grid:hover .proeprty-sh-more-list{
+.VEHICLE-grid:hover .proeprty-sh-more-list{
      display: block; 
     color: #FFF;
     -webkit-transform: scale(1);
@@ -3753,11 +3753,11 @@ margin: 0px;
 .slider-selection { 
     background: none repeat scroll 0 0 #FF2929;
 }
-.vehicul-detail{
+.VEHICLE-detail{
     background: rgba(242, 242, 242, 0.9) none repeat scroll 0 0;
     padding: 40px 15px;
 }
-.vehicul-detail > span {
+.VEHICLE-detail > span {
     color: #c7c7c7;
     float: left;
     font-family: open sans;
@@ -3767,7 +3767,7 @@ margin: 0px;
     width: 100%;
     margin-top: 5px;
 }
-.vehicul-detail > span i {
+.VEHICLE-detail > span i {
     font-size: 14px;
     margin-right: 7px;
 }
@@ -3877,7 +3877,7 @@ margin: 0px;
     margin-top: 15px;
     padding-top: 15px;
 }
-/*vehicul slider */
+/*VEHICLE slider */
 
 .lSSlideWrapper {
     max-width: 100%;
@@ -3893,41 +3893,41 @@ margin: 0px;
 .lSSlideOuter { 
     text-align: center;
 }
-.vehicul-post .lSSlideOuter .lSPager {
+.VEHICLE-post .lSSlideOuter .lSPager {
     display: inline-block;
 }
-.vehicul-post .lSSlideOuter .lSPager li.active, .vehicul-post .lSSlideOuter .lSPager li:hover {
+.VEHICLE-post .lSSlideOuter .lSPager li.active, .VEHICLE-post .lSSlideOuter .lSPager li:hover {
     border-radius: 0px;
 }
-.vehicul-post.lSSlideOuter .lSPager li.active, .vehicul-post .lSSlideOuter .lSPager li:hover {
+.VEHICLE-post.lSSlideOuter .lSPager li.active, .VEHICLE-post .lSSlideOuter .lSPager li:hover {
     border: 2px solid #FFF;
 }
-.vehicul-post .light-slide-item {
+.VEHICLE-post .light-slide-item {
     position: relative; 
     overflow: hidden;
 }
-.vehicul-post .lSAction > .lSNext {
+.VEHICLE-post .lSAction > .lSNext {
     background-image: url("../img/arrow-right.svg");
     background-position: center center;
 }
-.vehicul-post .lSAction > .lSPrev {
+.VEHICLE-post .lSAction > .lSPrev {
     background-image: url("../img/arrow-left.svg");
     background-position: center center;
 }
 
-.vehicul-video{
+.VEHICLE-video{
     min-height: 400px;
 }
-.vehicul-video ,.vehiculMap,.vehicul-feature {
+.VEHICLE-video ,.VEHICLEMap,.VEHICLE-feature {
     padding: 40px 0;
     clear: both;
 }
-#vehiculMap{
+#VEHICLEMap{
     height: 350px;    
     width:100%;
 }
 
-.vehicul-feature-content .has,  .vehicul-feature-content .no-has {
+.VEHICLE-feature-content .has,  .VEHICLE-feature-content .no-has {
     padding: 3px 0;
     font-size: 14px;
     width: 33.333%;
@@ -3938,7 +3938,7 @@ margin: 0px;
     opacity: .5;
     filter: alpha(opacity=50);
 }
-.vehicul-feature-content .no-has {
+.VEHICLE-feature-content .no-has {
     padding: 3px 0;
     font-size: 14px;
     width: 33.333%;
@@ -4034,25 +4034,25 @@ i.fa.fa-th, i.fa.fa-th-list {
 i.fa.fa-th{
     color: #FF2929;
 }
-.vehicul-grid {
+.VEHICLE-grid {
     border: 1px solid #EDEDED;
     clear: both;
     min-height: 235px;
     overflow: hidden;
     margin-bottom: 20px;
 }
-.vehicul-grid .to-thumb img{
+.VEHICLE-grid .to-thumb img{
     width: 100%;
     height: 235px;
 }
-.vehicul-grid .to-details{
+.VEHICLE-grid .to-details{
     position: relative;
 }
-.vehicul-grid .to-details{
+.VEHICLE-grid .to-details{
 
     min-height: 235px;
 }
-.vehicul-grid .to-details .vehicul-bottom-cnt{
+.VEHICLE-grid .to-details .VEHICLE-bottom-cnt{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -4061,25 +4061,25 @@ i.fa.fa-th{
     padding: 9px 15px;
     color: #5F5E5E;
 }
-.vehicul-grid .vehicul-top-cnt{
+.VEHICLE-grid .VEHICLE-top-cnt{
     padding: 9px 15px;
 }
-.vehicul-top-cnt .price{
+.VEHICLE-top-cnt .price{
     font-size: 25px;
     color: rgb(255, 41, 41);
 }
-.vehicul-grid ul.vehicul-info {
+.VEHICLE-grid ul.VEHICLE-info {
 
     margin: 0px; 
     left: 0px;
     list-style: outside none;
     min-width: 230px;
 }
-.vehicul-grid ul.vehicul-info li {
+.VEHICLE-grid ul.VEHICLE-info li {
     float: left;
     margin-right: 20px;
 }
-.vehicul-grid  ul.vehicul-info li i {
+.VEHICLE-grid  ul.VEHICLE-info li i {
     font-size: 20px;
     color: #8F8F8F;
 }
@@ -4089,7 +4089,7 @@ i.fa.fa-th{
 .filter-wrapper {
     margin-bottom: 25px;
 }
-.vehicul-top-cnt > h3 a {
+.VEHICLE-top-cnt > h3 a {
     color: #1b1d21;
     font-size: 35px;
 }
@@ -4139,7 +4139,7 @@ font-size: 16px;
     transform: scale(0.9);
     width: 100%;
 }
-.vehicul-grid:hover .to-thumb::before {
+.VEHICLE-grid:hover .to-thumb::before {
     opacity: 0.7;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);

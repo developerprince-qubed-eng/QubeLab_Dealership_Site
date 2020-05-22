@@ -811,7 +811,7 @@
 
 @media (min-width: 480px) and (max-width: 767px){
 
-    .VEHICLES-thumb ul.vehicul-info {
+    .VEHICLES-thumb ul.VEHICLE-info {
         left: 0px;
         min-width: 213px;
         padding: 8px 10px 8px 10px;

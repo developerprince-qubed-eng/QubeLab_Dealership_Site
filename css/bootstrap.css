@@ -3548,9 +3548,9 @@ tbody.collapse.in {
   -webkit-transition-duration: .35s;
        -o-transition-duration: .35s;
           transition-duration: .35s;
-  -webkit-transition-vehicul: height, visibility;
-       -o-transition-vehicul: height, visibility;
-          transition-vehicul: height, visibility;
+  -webkit-transition-VEHICLE: height, visibility;
+       -o-transition-VEHICLE: height, visibility;
+          transition-VEHICLE: height, visibility;
 }
 .caret {
   display: inline-block;
