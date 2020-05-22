@@ -1,0 +1,31 @@
+{
+  "name": "qubedlab_dealership",
+  "version": "1.0.0",
+  "description": "Static Site",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developerprince-qubed-eng/QubeLab_Dealership_Site.git"
+  },
+  "keywords": [
+    "Cars",
+    "Vehicles",
+    "Dealership"
+  ],
+  "author": "DeveloperPrince",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developerprince-qubed-eng/QubeLab_Dealership_Site/issues"
+  },
+  "homepage": "https://github.com/developerprince-qubed-eng/QubeLab_Dealership_Site#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
